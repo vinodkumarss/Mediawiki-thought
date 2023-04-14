@@ -2,7 +2,7 @@ version: "3"
 
 services:
     mediawiki:
-        image: supreetraut/mediawiki-1.34
+        image: vinodkumarss/mediawiki:v2
         container_name: mediawiki
         restart: always
         ports:
@@ -10,7 +10,7 @@ services:
         networks:
             - wikinetwork
     db:
-        image: supreetraut/mariadb-wiki
+        image: vinodkumarss/mariadb:v1
         container_name: db
         restart: always
         env_file: .env
