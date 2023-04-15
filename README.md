@@ -1,9 +1,9 @@
 # mediawiki
-Contains docker and kubernetes files for setting up the Mediawiki v1.34 service on Kubernetes cluster
+Contains docker and kubernetes files for setting up the Mediawiki v1.39 service on Kubernetes cluster
 The YAML files are generated with some pre-configured values and needs to be modified for further generalization.
 
 ## Dockerfiles
-* `/Apps/Dockerfile` - For installing and configuring Mediawiki v1.34 on a Centos7 container.
+* `/Apps/Dockerfile` - For installing and configuring Mediawiki v1.39 on a Centos7 container.
 * `/DB/Dockerfile`  - For installing and configuring Mariadb for handling Mediawiki database.
 
 ## Docker-compose

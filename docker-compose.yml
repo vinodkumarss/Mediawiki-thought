@@ -10,7 +10,7 @@ services:
         networks:
             - wikinetwork
     db:
-        image: vinodkumarss/mariadb:v1
+        image: vinodkumarss/mariadb
         container_name: db
         restart: always
         env_file: .env

@@ -18,21 +18,21 @@ spec:
         service: db
     spec:
       containers:
-      - env:
-        - name: MYSQL_DATABASE
-          valueFrom:
-            configMapKeyRef:
-              key: MYSQL_DATABASE
-              name: env
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: db-secret
-              key: MYSQL_ROOT_PASSWORD
-        image: vinodkumarss/mariadb:v1
-        imagePullPolicy: Always
-        name: db
-        ports:
-        - containerPort: 3306
+        - env:
+            - name: MYSQL_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  key: MYSQL_DATABASE
+                  name: env
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: MYSQL_ROOT_PASSWORD
+          image: vinodkumarss/mariadb
+          imagePullPolicy: Always
+          name: db
+          ports:
+            - containerPort: 3306
       restartPolicy: Always
       serviceAccountName: ""
