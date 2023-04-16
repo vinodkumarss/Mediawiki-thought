@@ -6,9 +6,6 @@ The YAML files are generated with some pre-configured values and needs to be mod
 * `/Apps/Dockerfile` - For installing and configuring Mediawiki v1.39 on a Centos7 container.
 * `/DB/Dockerfile`  - For installing and configuring Mariadb for handling Mediawiki database.
 
-## Docker-compose
-* `docker-compose.yml` file has been provided to setup the Mediawiki and Mariadb services on a docker node.
-
 ## Kubernetes
 The kubernetes objects are defined in following files: `mediawiki-deployment.yaml` `mediawiki-service.yaml` `db-deployment.yaml` `db-service.yaml` `env-configmap.yaml` `wikinetwork-networkpolicy.yaml` `secret.yaml`
 
