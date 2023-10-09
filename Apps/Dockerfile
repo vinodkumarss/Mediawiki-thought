@@ -1,6 +1,6 @@
 FROM centos:7
 
-MAINTIANER VinodKumarSS
+MAINTAINER VinodKumarSS
 
 RUN yum install -y --setopt=tsflags=nodocs centos-release-scl wget
 
